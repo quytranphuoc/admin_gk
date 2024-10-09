@@ -7,6 +7,8 @@ class Product {
   final double price;
   final File imageFile;
   String? imageUrl;
+  // final String? imageUrl;
+  // final File? imageFile;
 
   Product({
     this.id,

@@ -46,7 +46,15 @@ class _ProductScreenState extends State<ProductScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Sản phẩm')),
+      appBar: AppBar(
+          title: Center(
+        child: Text(
+          'Dữ liệu sản phẩm',
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 30), // Có thể thêm style nếu cần
+        ),
+      )),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
@@ -76,11 +84,11 @@ class _ProductScreenState extends State<ProductScreen> {
               child: Text('Thêm sản phẩm'),
             ),
             SizedBox(height: 20),
-            Expanded(child: ProductList()), // Widget hiển thị danh sách sản phẩm
+            Expanded(
+                child: ProductList()), // Widget hiển thị danh sách sản phẩm
           ],
         ),
       ),
     );
   }
 }
-
