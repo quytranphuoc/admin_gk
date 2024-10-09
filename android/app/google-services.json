@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "882796110405",
+    "project_id": "admin-gk",
+    "storage_bucket": "admin-gk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882796110405:android:d24d661f7c98571d00792c",
+        "android_client_info": {
+          "package_name": "com.example.admin_gk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_BoHaThVCuI9oiFgDXBb9Ids9m0WefqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
