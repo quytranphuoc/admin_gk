@@ -21,12 +21,20 @@ class ProductService {
     await _firestore.collection('products').doc(productId).delete();
   }
 
-  Future<void> updateProduct(Product product) async {
-    await _firestore.collection('products').doc(product.id).update({
-      'name': product.name,
-      'category': product.category,
-      'price': product.price,
-      'imageUrl': product.imageUrl,
+  // Future<void> updateProduct(Product product) async {
+  //   await _firestore.collection('products').doc(product.id).update({
+  //     'name': product.name,
+  //     'category': product.category,
+  //     'price': product.price,
+  //     // 'imageUrl': product.imageUrl,
+  //   });
+  // }
+  Future<void> updateProductInfo(
+      String productId, String name, String category, double price) async {
+    await _firestore.collection('products').doc(productId).update({
+      'name': name,
+      'category': category,
+      'price': price,
     });
   }
 
